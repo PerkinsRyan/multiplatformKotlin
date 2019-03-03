@@ -1,15 +1,6 @@
 package sample
 
-import io.ktor.client.HttpClient
-import io.ktor.client.request.get
-import io.ktor.client.request.url
-import kotlinx.coroutines.*
-
-internal val ApplicationDispatcher: CoroutineDispatcher = Dispatchers.Default
-
 class ParkRepository {
-
-    private val client = HttpClient()
 
     private val nationalParks = listOf(
         Park("Acadia"),
@@ -74,19 +65,7 @@ class ParkRepository {
         Park("Zion", true)
     )
 
-    fun getAllParks(callback: (List<Park>) -> Unit) {
-        GlobalScope.apply {
-            launch(ApplicationDispatcher) {
-                val result: String = client.get {
-                    url("https://private-13b17e-ryanperkins1.apiary-mock.com/questions")
-                }
-
-                launch(Dispatchers.Main) {
-                    callback(nationalParks)
-                }
-            }
-        }
-    }
+    fun getAllParks(callback: (List<Park>) -> Unit) = callback(nationalParks)
 
     fun getParks(filter: String, callback: (List<Park>) -> Unit) = callback(
         nationalParks.filter { it.name.contains(filter, true) }
