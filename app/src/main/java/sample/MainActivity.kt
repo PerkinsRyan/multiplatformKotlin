@@ -4,9 +4,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity(), MainView {
     private val parkRepository = ParkRepository()
@@ -32,12 +29,8 @@ class MainActivity : AppCompatActivity(), MainView {
     }
 
     override fun showParks(parks: List<Park>) {
-        GlobalScope.apply {
-            launch (Dispatchers.Main) {
-                contactsAdapter.clear()
-                contactsAdapter.addAll(parks.map { it.name })
-            }
-        }
+        contactsAdapter.clear()
+        contactsAdapter.addAll(parks.map { it.name })
     }
 
     override fun showVisitedCount(count: Int) {

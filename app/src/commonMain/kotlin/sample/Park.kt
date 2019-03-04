@@ -1,6 +1,10 @@
 package sample
 
+import kotlinx.serialization.Optional
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class Park(
     val name: String,
-    val visited: Boolean = false
+    @Optional val visited: Boolean = false
 )
