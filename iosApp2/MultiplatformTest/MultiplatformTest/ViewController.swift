@@ -1,5 +1,5 @@
 import UIKit
-import app
+import main
 
 class ViewController: UITableViewController, MainView {
     
@@ -7,7 +7,7 @@ class ViewController: UITableViewController, MainView {
     
     let presenter = MainPresenter(parkRepository: ParkRepository())
     
-    private var parks: [Park]!
+    private var parks: [Park] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()

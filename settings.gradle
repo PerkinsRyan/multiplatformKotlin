@@ -12,4 +12,6 @@ pluginManagement {
 }
 rootProject.name = 'MultiplaformTest'
 
+enableFeaturePreview("GRADLE_METADATA")
+
 include ':app'

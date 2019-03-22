@@ -2,23 +2,18 @@ package sample
 
 import kotlinx.coroutines.*
 
-internal val ApplicationDispatcher: CoroutineDispatcher = Dispatchers.Default
+internal expect val ApplicationDispatcher: CoroutineDispatcher
 
 class ParkRepository {
-
-    private val api = ParksApi("http://private-13b17e-ryanperkins1.apiary-mock.com/")
+    private val api = ParksApi("https://private-13b17e-ryanperkins1.apiary-mock.com/")
     private var nationalParks = emptyList<Park>()
 
     fun getAllParks(callback: (List<Park>) -> Unit) {
         GlobalScope.apply {
             launch(ApplicationDispatcher) {
-                if (nationalParks.isEmpty()) {
-                    nationalParks = api.getAllParks()
-                }
+                nationalParks = api.getAllParks()
 
-                launch(Dispatchers.Main) {
-                    callback(nationalParks)
-                }
+                callback(nationalParks)
             }
         }
     }

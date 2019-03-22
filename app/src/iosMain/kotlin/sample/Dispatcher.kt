@@ -1,10 +1,17 @@
 package sample
 
-import platform.darwin.dispatch_queue_t
-import kotlin.coroutines.CoroutineContext
+import kotlin.coroutines.*
+import kotlinx.coroutines.*
+import platform.darwin.*
 
-//
-//internal actual val ApplicationDispatcher: CoroutineDispatcher
-//    get() = TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+internal actual val ApplicationDispatcher: CoroutineDispatcher = NsQueueDispatcher(dispatch_get_main_queue())
 
-//internal class NsQueueDispatcher(private val dispatchQueue: dispatch_queue_t): CoroutineContext
+internal class NsQueueDispatcher(
+    private val dispatchQueue: dispatch_queue_t
+) : CoroutineDispatcher() {
+    override fun dispatch(context: CoroutineContext, block: Runnable) {
+        dispatch_async(dispatchQueue) {
+            block.run()
+        }
+    }
+}

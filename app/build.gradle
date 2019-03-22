@@ -10,6 +10,8 @@ repositories {
 }
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-multiplatform'
+apply plugin: 'kotlinx-serialization'
 
 android {
     compileSdkVersion 28
@@ -57,7 +59,9 @@ kotlin {
         commonMain {
             dependencies {
                 implementation 'org.jetbrains.kotlin:kotlin-stdlib-common'
+                implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.1.1'
                 implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.10.0"
+
                 implementation 'io.ktor:ktor-client-core:1.1.2'
                 implementation 'io.ktor:ktor-client-json:1.1.2'
             }
@@ -73,6 +77,7 @@ kotlin {
                 implementation 'org.jetbrains.kotlin:kotlin-stdlib'
                 implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1'
                 implementation 'org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.10.0'
+
                 implementation 'io.ktor:ktor-client-json-jvm:1.1.2'
                 implementation 'io.ktor:ktor-client-okhttp:1.1.2'
 //                implementation 'io.ktor:ktor-client-android:1.1.2'
@@ -86,8 +91,12 @@ kotlin {
         }
         iosMain {
             dependencies {
+                implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.1.1'
+                implementation 'org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:0.10.0'
+
                 implementation 'io.ktor:ktor-client-ios:1.1.2'
-                implementation 'org.jetbrains.kotlinx:kotlinx-serialization-native:0.10.0'
+                implementation 'io.ktor:ktor-client-core-native:1.1.2'
+                implementation 'io.ktor:ktor-client-json-native:1.1.2'
             }
         }
         iosTest {

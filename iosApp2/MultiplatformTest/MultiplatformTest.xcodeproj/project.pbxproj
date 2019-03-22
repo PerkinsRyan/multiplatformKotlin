@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B9501842244378D00BB1A87 /* main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B95017F2244377900BB1A87 /* main.framework */; };
+		0B9501852244378D00BB1A87 /* main.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B95017F2244377900BB1A87 /* main.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0BA77EAB21F7DBD2004E51FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA77EAA21F7DBD2004E51FF /* AppDelegate.swift */; };
 		0BA77EAD21F7DBD2004E51FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA77EAC21F7DBD2004E51FF /* ViewController.swift */; };
 		0BA77EB021F7DBD2004E51FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA77EAE21F7DBD2004E51FF /* Main.storyboard */; };
 		0BA77EB221F7DBD3004E51FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA77EB121F7DBD3004E51FF /* Assets.xcassets */; };
 		0BA77EB521F7DBD3004E51FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA77EB321F7DBD3004E51FF /* LaunchScreen.storyboard */; };
-		0BA77EBE21F7DC1D004E51FF /* app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA77EBD21F7DC1D004E51FF /* app.framework */; };
-		0BA77EC021F7DE65004E51FF /* app.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA77EBD21F7DC1D004E51FF /* app.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0BA77EC121F7DE66004E51FF /* Embed Frameworks */ = {
+		0B9501862244378D00BB1A87 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0BA77EC021F7DE65004E51FF /* app.framework in Embed Frameworks */,
+				0B9501852244378D00BB1A87 /* main.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B95017F2244377900BB1A87 /* main.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = main.framework; sourceTree = "<group>"; };
 		0BA77EA721F7DBD2004E51FF /* MultiplatformTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplatformTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA77EAA21F7DBD2004E51FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BA77EAC21F7DBD2004E51FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		0BA77EB121F7DBD3004E51FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BA77EB421F7DBD3004E51FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BA77EB621F7DBD3004E51FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BA77EBD21F7DC1D004E51FF /* app.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = app.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BA77EBE21F7DC1D004E51FF /* app.framework in Frameworks */,
+				0B9501842244378D00BB1A87 /* main.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 		0BA77EBC21F7DC1D004E51FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0BA77EBD21F7DC1D004E51FF /* app.framework */,
+				0B95017F2244377900BB1A87 /* main.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,7 +101,7 @@
 				0BA77EA321F7DBD2004E51FF /* Sources */,
 				0BA77EA421F7DBD2004E51FF /* Frameworks */,
 				0BA77EA521F7DBD2004E51FF /* Resources */,
-				0BA77EC121F7DE66004E51FF /* Embed Frameworks */,
+				0B9501862244378D00BB1A87 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
