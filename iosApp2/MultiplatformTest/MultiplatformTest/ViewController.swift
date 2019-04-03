@@ -1,5 +1,6 @@
 import UIKit
 import main
+import Firebase
 
 class ViewController: UITableViewController, MainView {
     
@@ -12,8 +13,20 @@ class ViewController: UITableViewController, MainView {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        presenter.bindView(mainView: self)
+        //presenter.bindView(mainView: self)
         searchBar.delegate = self
+        
+        let db = Firestore.firestore()
+        
+        db.collection("parks").addSnapshotListener { (snapshot, _) in
+            var parks = snapshot?.documents.compactMap { document -> Park in
+                let name = document.data()["name"] as? String
+                let visited = document.data()["visited"] as? Bool
+                return Park.init(name: name ?? "", visited: visited ?? false)
+                } ?? []
+            parks.sort { $0.name < $1.name }
+            self.showParks(parks: parks)
+        }
     }
     
     func showParks(parks: [Park]) {

@@ -14,6 +14,9 @@
 		0BA77EB021F7DBD2004E51FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA77EAE21F7DBD2004E51FF /* Main.storyboard */; };
 		0BA77EB221F7DBD3004E51FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA77EB121F7DBD3004E51FF /* Assets.xcassets */; };
 		0BA77EB521F7DBD3004E51FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA77EB321F7DBD3004E51FF /* LaunchScreen.storyboard */; };
+		0BFD41C52254031D0088019B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BFD41C42254031D0088019B /* GoogleService-Info.plist */; };
+		158DDD8164E9C2F3BC20E648 /* Pods_MultiplatformTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A2210052239CF57A68EDEE /* Pods_MultiplatformTest.framework */; };
+		74145BCEA3E746B20586D553 /* Pods_MultiplatformTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA833BE8768EDC64BFBBCEB /* Pods_MultiplatformTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +42,11 @@
 		0BA77EB121F7DBD3004E51FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BA77EB421F7DBD3004E51FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BA77EB621F7DBD3004E51FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BFD41C42254031D0088019B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3CA833BE8768EDC64BFBBCEB /* Pods_MultiplatformTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiplatformTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A2210052239CF57A68EDEE /* Pods_MultiplatformTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MultiplatformTest.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MultiplatformTest-amjhwlrjxmlzrpewtzszhipkzdyk/Build/Products/Debug-iphoneos/Pods_MultiplatformTest.framework"; sourceTree = SOURCE_ROOT; };
+		65EE41FBF965A0CA1DDE48C9 /* Pods-MultiplatformTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiplatformTest.release.xcconfig"; path = "Target Support Files/Pods-MultiplatformTest/Pods-MultiplatformTest.release.xcconfig"; sourceTree = "<group>"; };
+		FD4C72A3F591DA995D8B8E9F /* Pods-MultiplatformTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiplatformTest.debug.xcconfig"; path = "Target Support Files/Pods-MultiplatformTest/Pods-MultiplatformTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B9501842244378D00BB1A87 /* main.framework in Frameworks */,
+				158DDD8164E9C2F3BC20E648 /* Pods_MultiplatformTest.framework in Frameworks */,
+				74145BCEA3E746B20586D553 /* Pods_MultiplatformTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,7 @@
 				0BA77EA921F7DBD2004E51FF /* MultiplatformTest */,
 				0BA77EA821F7DBD2004E51FF /* Products */,
 				0BA77EBC21F7DC1D004E51FF /* Frameworks */,
+				ABF6B8BB1188C5F4FE7CF4C8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +90,7 @@
 				0BA77EB121F7DBD3004E51FF /* Assets.xcassets */,
 				0BA77EB321F7DBD3004E51FF /* LaunchScreen.storyboard */,
 				0BA77EB621F7DBD3004E51FF /* Info.plist */,
+				0BFD41C42254031D0088019B /* GoogleService-Info.plist */,
 			);
 			path = MultiplatformTest;
 			sourceTree = "<group>";
@@ -87,8 +99,19 @@
 			isa = PBXGroup;
 			children = (
 				0B95017F2244377900BB1A87 /* main.framework */,
+				52A2210052239CF57A68EDEE /* Pods_MultiplatformTest.framework */,
+				3CA833BE8768EDC64BFBBCEB /* Pods_MultiplatformTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABF6B8BB1188C5F4FE7CF4C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD4C72A3F591DA995D8B8E9F /* Pods-MultiplatformTest.debug.xcconfig */,
+				65EE41FBF965A0CA1DDE48C9 /* Pods-MultiplatformTest.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,10 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BA77EB921F7DBD3004E51FF /* Build configuration list for PBXNativeTarget "MultiplatformTest" */;
 			buildPhases = (
+				F9FE75ED7A3A94B9888C9F8F /* [CP] Check Pods Manifest.lock */,
 				0BA77EA321F7DBD2004E51FF /* Sources */,
 				0BA77EA421F7DBD2004E51FF /* Frameworks */,
 				0BA77EA521F7DBD2004E51FF /* Resources */,
 				0B9501862244378D00BB1A87 /* Embed Frameworks */,
+				9A6DC53491C5D801CE60FFFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,12 +176,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BA77EB521F7DBD3004E51FF /* LaunchScreen.storyboard in Resources */,
+				0BFD41C52254031D0088019B /* GoogleService-Info.plist in Resources */,
 				0BA77EB221F7DBD3004E51FF /* Assets.xcassets in Resources */,
 				0BA77EB021F7DBD2004E51FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A6DC53491C5D801CE60FFFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultiplatformTest/Pods-MultiplatformTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultiplatformTest/Pods-MultiplatformTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9FE75ED7A3A94B9888C9F8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultiplatformTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0BA77EA321F7DBD2004E51FF /* Sources */ = {
@@ -308,6 +393,7 @@
 		};
 		0BA77EBA21F7DBD3004E51FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD4C72A3F591DA995D8B8E9F /* Pods-MultiplatformTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -320,7 +406,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerdery.MultiplatformTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdery.MultiplatformTest.firebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,6 +415,7 @@
 		};
 		0BA77EBB21F7DBD3004E51FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65EE41FBF965A0CA1DDE48C9 /* Pods-MultiplatformTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -341,7 +428,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerdery.MultiplatformTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdery.MultiplatformTest.firebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

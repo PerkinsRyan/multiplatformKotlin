@@ -1,0 +1,4 @@
+# Firebase C-Interop
+
+language = Objective-C
+headers = Firebase.h

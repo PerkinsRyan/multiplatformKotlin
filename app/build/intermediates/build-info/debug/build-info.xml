@@ -2,14 +2,13 @@
 <instant-run
     abi="x86"
     api-level="28"
-    build-mode="COLD"
+    build-mode="FULL"
     density="560dpi"
     format="10"
-    ir-eligibility="CLASS_ANNOTATION_CHANGE"
-    plugin-version="3.2.0"
-    timestamp="1551287775504"
+    plugin-version="3.3.2"
+    timestamp="1554324976494"
     token="7015091397325842266"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -19,18 +18,54 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="53" />
+        duration="208" />
     <task
         name="verifier"
-        duration="126" />
+        duration="283" />
 
+    <artifact
+        location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
     <artifact
         location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
         type="SPLIT" />
+    <artifact
+        location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1551286061964"
+        timestamp="1554324976494"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
@@ -39,19 +74,19 @@
             location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
             location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
@@ -60,10 +95,10 @@
             location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -71,26 +106,6 @@
         <artifact
             location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1551286718372"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="CLASS_ANNOTATION_CHANGE"
-        timestamp="1551287775504"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/rperkins/IdeaProjects/MultiplaformTest/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
     </build>
 
 </instant-run>

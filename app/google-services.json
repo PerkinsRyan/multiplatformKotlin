@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "200832464895",
+    "firebase_url": "https://nationalparks-904e9.firebaseio.com",
+    "project_id": "nationalparks-904e9",
+    "storage_bucket": "nationalparks-904e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200832464895:android:4dd42f3a6966025a",
+        "android_client_info": {
+          "package_name": "com.rperkins.nationalparks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200832464895-5pl229jcafb7ke8eiekvlkv93ps5tj86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBng-IzrAuVNV7uxReRC1wWL1kEZouN23M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
