@@ -6,8 +6,7 @@ import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), MainView {
-    private val parkRepository = ParkRepository()
-    private val presenter = MainPresenter(parkRepository)
+    private val presenter = MainPresenter(ParksCloud())
     private lateinit var contactsAdapter: ArrayAdapter<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {

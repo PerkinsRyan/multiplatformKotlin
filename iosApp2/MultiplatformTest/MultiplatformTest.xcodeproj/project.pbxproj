@@ -15,8 +15,7 @@
 		0BA77EB221F7DBD3004E51FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA77EB121F7DBD3004E51FF /* Assets.xcassets */; };
 		0BA77EB521F7DBD3004E51FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA77EB321F7DBD3004E51FF /* LaunchScreen.storyboard */; };
 		0BFD41C52254031D0088019B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BFD41C42254031D0088019B /* GoogleService-Info.plist */; };
-		158DDD8164E9C2F3BC20E648 /* Pods_MultiplatformTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A2210052239CF57A68EDEE /* Pods_MultiplatformTest.framework */; };
-		74145BCEA3E746B20586D553 /* Pods_MultiplatformTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA833BE8768EDC64BFBBCEB /* Pods_MultiplatformTest.framework */; };
+		837CC9DAC8D4B1589870F944 /* libPods-MultiplatformTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFC227D6A87FD8A4AA48670 /* libPods-MultiplatformTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,9 +42,9 @@
 		0BA77EB421F7DBD3004E51FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BA77EB621F7DBD3004E51FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BFD41C42254031D0088019B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3CA833BE8768EDC64BFBBCEB /* Pods_MultiplatformTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiplatformTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A2210052239CF57A68EDEE /* Pods_MultiplatformTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MultiplatformTest.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MultiplatformTest-amjhwlrjxmlzrpewtzszhipkzdyk/Build/Products/Debug-iphoneos/Pods_MultiplatformTest.framework"; sourceTree = SOURCE_ROOT; };
 		65EE41FBF965A0CA1DDE48C9 /* Pods-MultiplatformTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiplatformTest.release.xcconfig"; path = "Target Support Files/Pods-MultiplatformTest/Pods-MultiplatformTest.release.xcconfig"; sourceTree = "<group>"; };
+		8EFC227D6A87FD8A4AA48670 /* libPods-MultiplatformTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MultiplatformTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4C72A3F591DA995D8B8E9F /* Pods-MultiplatformTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiplatformTest.debug.xcconfig"; path = "Target Support Files/Pods-MultiplatformTest/Pods-MultiplatformTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,8 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B9501842244378D00BB1A87 /* main.framework in Frameworks */,
-				158DDD8164E9C2F3BC20E648 /* Pods_MultiplatformTest.framework in Frameworks */,
-				74145BCEA3E746B20586D553 /* Pods_MultiplatformTest.framework in Frameworks */,
+				837CC9DAC8D4B1589870F944 /* libPods-MultiplatformTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +98,7 @@
 			children = (
 				0B95017F2244377900BB1A87 /* main.framework */,
 				52A2210052239CF57A68EDEE /* Pods_MultiplatformTest.framework */,
-				3CA833BE8768EDC64BFBBCEB /* Pods_MultiplatformTest.framework */,
+				8EFC227D6A87FD8A4AA48670 /* libPods-MultiplatformTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,7 +124,7 @@
 				0BA77EA421F7DBD2004E51FF /* Frameworks */,
 				0BA77EA521F7DBD2004E51FF /* Resources */,
 				0B9501862244378D00BB1A87 /* Embed Frameworks */,
-				9A6DC53491C5D801CE60FFFD /* [CP] Embed Pods Frameworks */,
+				DCC6C3D42EAA311A33173FB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,7 +183,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9A6DC53491C5D801CE60FFFD /* [CP] Embed Pods Frameworks */ = {
+		DCC6C3D42EAA311A33173FB5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,30 +191,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MultiplatformTest/Pods-MultiplatformTest-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-MultiplatformTest/Pods-MultiplatformTest-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultiplatformTest/Pods-MultiplatformTest-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultiplatformTest/Pods-MultiplatformTest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F9FE75ED7A3A94B9888C9F8F /* [CP] Check Pods Manifest.lock */ = {

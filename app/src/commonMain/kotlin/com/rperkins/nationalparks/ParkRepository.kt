@@ -4,8 +4,7 @@ import kotlinx.coroutines.*
 
 internal expect val ApplicationDispatcher: CoroutineDispatcher
 
-class ParkRepository: IParkRepository {
-    private val parksCloud = ParksCloud()
+class ParkRepository(private val parksCloud: IParksCloud): IParkRepository {
     private var nationalParks = emptyList<Park>()
 
     override fun getAllParks(callback: (List<Park>) -> Unit) {

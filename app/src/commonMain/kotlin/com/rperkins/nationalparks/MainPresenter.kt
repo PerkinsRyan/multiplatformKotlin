@@ -1,7 +1,12 @@
 package com.rperkins.nationalparks
 
-class MainPresenter(val parkRepository: IParkRepository) {
+class MainPresenter(parksCloud: IParksCloud) {
     private lateinit var view: MainView
+    private val parkRepository: IParkRepository
+
+    init {
+        parkRepository = ParkRepository(parksCloud)
+    }
 
     fun bindView(mainView: MainView) {
         view = mainView

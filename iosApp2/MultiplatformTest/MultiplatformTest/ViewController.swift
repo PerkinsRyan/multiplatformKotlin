@@ -26,6 +26,7 @@ class ViewController: UITableViewController, MainView {
                 } ?? []
             parks.sort { $0.name < $1.name }
             self.showParks(parks: parks)
+            self.showVisitedCount(count: Int32(parks.filter{ $0.visited == true }.count))
         }
     }
     

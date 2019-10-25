@@ -1,7 +1,0 @@
-# Firebase C-Interop
-
-language = Objective-C
-headers = Sources/Firebase.h
-headerFilter = Sources/**
-package = Sources
-linkerOpts = -F/Sources -framework Firebase

@@ -1,5 +1,5 @@
 package com.rperkins.nationalparks
 
-expect class ParksCloud() {
+interface IParksCloud {
     fun getParks(onSuccess: (List<Park>) -> Unit)
 }
