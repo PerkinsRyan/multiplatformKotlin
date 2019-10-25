@@ -16,12 +16,13 @@ apply plugin: 'kotlinx-serialization'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "org.jetbrains.kotlin.mpp_app_android"
-        minSdkVersion 15
+        applicationId "com.rperkins.nationalparks"
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        
     }
     buildTypes {
         release {
@@ -81,6 +82,9 @@ kotlin {
                 implementation 'io.ktor:ktor-client-json-jvm:1.1.2'
                 implementation 'io.ktor:ktor-client-okhttp:1.1.2'
 //                implementation 'io.ktor:ktor-client-android:1.1.2'
+
+                implementation 'com.google.firebase:firebase-core:16.0.8'
+                implementation 'com.google.firebase:firebase-firestore:18.2.0'
             }
         }
         androidTest {
@@ -103,6 +107,8 @@ kotlin {
         }
     }
 }
+
+apply plugin: 'com.google.gms.google-services'
 
 // This task attaches native framework built from ios module to Xcode project
 // (see iosApp directory). Don't run this task directly,
